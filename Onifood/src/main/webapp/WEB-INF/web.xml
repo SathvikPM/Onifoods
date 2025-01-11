@@ -1,0 +1,45 @@
+
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         id="WebApp_ID" version="4.0">
+    <display-name>Onifood</display-name>
+    
+    <servlet>
+        <servlet-name>RestaurantServlet</servlet-name>
+        <servlet-class>com.tap.controller.RestaurantServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>RestaurantServlet</servlet-name>
+        <url-pattern>/restaurants</url-pattern>
+    </servlet-mapping>
+     <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.tap.controller.LoginServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+    <servlet>
+    <servlet-name>SignUpServlet</servlet-name>
+    <servlet-class>com.tap.controller.SignUpServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>SignUpServlet</servlet-name>
+	    <url-pattern>/signup</url-pattern>
+	</servlet-mapping>
+	<servlet>
+    <servlet-name>MenuServlet</servlet-name>
+    <servlet-class>com.tap.controller.MenuServlet</servlet-class>
+   </servlet>
+   <servlet-mapping>
+    <servlet-name>MenuServlet</servlet-name>
+    <url-pattern>/MenuServlet</url-pattern>
+   </servlet-mapping>
+
+
+
+</web-app>
