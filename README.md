@@ -1,47 +1,36 @@
-🍣 Onifoods
+# 🍣 Onifoods
 
 Onifoods is a web application that provides users with a platform to explore and order various food items. It aims to connect users with local restaurants and offer a seamless food delivery experience.
 
-✨ *Features*
+## ✨ Features
 
-👥 User Registration and Login: Secure sign-up and authentication process.
+- 👥 **User Registration and Authentication:** Secure sign-up and login functionality.
+- 🔍 **Restaurant Search and Filters:** Find restaurants based on cuisine, location, and ratings.
+- 📜 **Menu Browsing and Food Item Details:** View detailed descriptions and prices of food items.
+- 🛒 **Cart and Order Management:**
+  - ➕ Add items to the cart.
+  - 📝 Modify orders before checkout.
+  - 🧾 View and confirm order summary.
+- 💳 **Payment Processing:**
+  - 💵 Pay bills securely through integrated payment gateways.
+- 🚚 **Real-time Order Tracking:** Track the status and location of your order live.
+- 🛡️ **Admin Dashboard:** Admins can manage restaurants, menus, orders, and monitor system activity.
+- 📊 **Order History:** Users can view their past orders and reorder easily.
+- ⭐ **Reviews and Ratings:** Users can leave feedback and rate restaurants.
 
-🔍 Restaurant Search and Filters: Find restaurants based on cuisine, location, and ratings.
+## 🛠️ Technologies Used
 
-📜 Menu Browsing and Food Item Details: View detailed descriptions and prices of food items.
+- ☕ **Java**
+- 🌐 **Servlets**
+- 🗄️ **JDBC**
+- 🛢️ **MySQL**
+- 🎨 **HTML & CSS**
+- 🖌️ **JavaScript**
 
-🛒 Cart and Order Management: Add items to the cart, modify orders, and proceed to checkout.
+## 📸 Screenshots
 
-💳 Payment Processing: Secure online payment options for hassle-free transactions.
+## 🚀 How to Run the Project
 
-🚚 Real-time Order Tracking: Monitor the status and location of your order in real-time.
-
-🛡️ Admin Dashboard: Admins can manage restaurants, menus, orders, and monitor system activity.
-
-🛠️ *Technologies Used*
-
-☕ Java
-
-🌐 Servlets
-
-🗄️ JDBC
-
-🛢️ MySQL
-
-🎨 HTML & CSS
-
-🖌️ JavaScript
-
-🚀 How to Run the Project
-
-📥 Clone the repository:
-
-git clone https://github.com/SathvikPM/Onifoods.git
-
-🛠️ Import the project into Eclipse.
-
-🗄️ Configure your database in db_config.properties.
-
-▶️ Deploy the project on Apache Tomcat.
-
-🤝 Feel free to contribute or report any issues!
+1. 📥 Clone the repository:
+   ```bash
+   git clone https://github.com/SathvikPM/Onifoods.git
