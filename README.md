@@ -2,7 +2,7 @@
 
 Onifoods is a web application that provides users with a platform to explore and order various food items. It aims to connect users with local restaurants and offer a seamless food delivery experience.
 
-✨ Features
+✨ *Features*
 
 👥 User Registration and Login: Secure sign-up and authentication process.
 
@@ -18,7 +18,7 @@ Onifoods is a web application that provides users with a platform to explore and
 
 🛡️ Admin Dashboard: Admins can manage restaurants, menus, orders, and monitor system activity.
 
-🛠️ Technologies Used
+🛠️ *Technologies Used*
 
 ☕ Java
 
