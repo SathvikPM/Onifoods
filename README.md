@@ -25,7 +25,6 @@ Onifoods is a web application that provides users with a platform to explore and
 - 🛢️ **MySQL**
 - 🎨 **HTML & CSS**
 
-## 📸 Screenshots
 
 ## 🚀 How to Run the Project
 
