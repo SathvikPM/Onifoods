@@ -13,7 +13,6 @@ Onifoods is a web application that provides users with a platform to explore and
   - 🧾 View and confirm order summary.
 - 💳 **Payment Processing:**
   - 💵 Pay bills securely through integrated payment gateways.
-- 🚚 **Real-time Order Tracking:** Track the status and location of your order live.
 - 🛡️ **Admin Dashboard:** Admins can manage restaurants, menus, orders, and monitor system activity.
 - 📊 **Order History:** Users can view their past orders and reorder easily.
 - ⭐ **Reviews and Ratings:** Users can leave feedback and rate restaurants.
@@ -25,7 +24,6 @@ Onifoods is a web application that provides users with a platform to explore and
 - 🗄️ **JDBC**
 - 🛢️ **MySQL**
 - 🎨 **HTML & CSS**
-- 🖌️ **JavaScript**
 
 ## 📸 Screenshots
 
