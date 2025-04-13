@@ -1,1 +1,77 @@
-/build/
+CREATE DATABASE IF NOT EXISTS tapfoods;
+
+USE tapfoods;
+
+-- Table for User
+CREATE TABLE user (
+    userId INT PRIMARY KEY,
+    userName VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    email VARCHAR(255) UNIQUE NOT NULL,
+    phoneNumber VARCHAR(15),
+    address TEXT,
+    role VARCHAR(50),
+    createDate TIMESTAMP,
+    lastLoginDate TIMESTAMP
+);
+
+-- Table for Restaurant
+CREATE TABLE restaurant (
+    restaurantId INT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    imagePath VARCHAR(255),
+    ratings DOUBLE,
+    eta TIMESTAMP,
+    cuisineType VARCHAR(100),
+    address TEXT,
+    isActive VARCHAR(5),
+    restaurantOwnerId INT
+);
+
+-- Table for Menu
+CREATE TABLE menu (
+    menuId INT PRIMARY KEY,
+    itemName VARCHAR(255) NOT NULL,
+    price DOUBLE NOT NULL,
+    description TEXT,
+    imagePath VARCHAR(255),
+    isAvailable VARCHAR(5),
+    restaurantId INT,
+    ratings DOUBLE,
+    FOREIGN KEY (restaurantId) REFERENCES restaurant(restaurantId)
+);
+
+-- Table for Order
+CREATE TABLE order (
+    orderId INT PRIMARY KEY AUTO_INCREMENT,
+    restaurantId INT,
+    userId INT,
+    totalAmount DOUBLE,
+    modeOfPayment VARCHAR(50),
+    orderStatus VARCHAR(50),
+    orderDate TIMESTAMP,
+    FOREIGN KEY (restaurantId) REFERENCES restaurant(restaurantId),
+    FOREIGN KEY (userId) REFERENCES user(userId)
+);
+
+-- Table for OrderHistory
+CREATE TABLE order_history (
+    orderHistoryId INT PRIMARY KEY AUTO_INCREMENT,
+    orderId INT,
+    userId INT,
+    FOREIGN KEY (orderId) REFERENCES order(orderId),
+    FOREIGN KEY (userId) REFERENCES user(userId)
+);
+
+-- Table for OrderItem
+CREATE TABLE order_item (
+    orderItemId INT PRIMARY KEY AUTO_INCREMENT,
+    userId INT,
+    menuId INT,
+    itemName VARCHAR(255),
+    ratings DOUBLE,
+    quantity INT,
+    price DOUBLE,
+    FOREIGN KEY (userId) REFERENCES user(userId),
+    FOREIGN KEY (menuId) REFERENCES menu(menuId)
+);
