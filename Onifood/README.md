@@ -20,6 +20,11 @@ Onifoods is a web application that provides users with a platform to explore and
 - HTML
 - CSS
 
+Database Setup ⚙️💾
+The database creation script is not included in the ZIP download. Please download it from the link  https://github.com/SathvikPM/Onifoods/blob/main/Onifood/.gitignore. 📥✨
+
+Once downloaded, run the script using your MySQL client or tool to set up the database and tables. 🚀📂
+
 ## Installation
 1. Clone the repository:
    ```sh
