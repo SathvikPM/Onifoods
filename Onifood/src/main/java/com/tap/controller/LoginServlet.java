@@ -12,6 +12,8 @@ import com.tap.daoImp.RestaurantDaoI;
 import com.tap.daoImp.UserDaoI;
 import com.tap.model.Restaurant;
 import com.tap.model.User;
+import com.tap.security.Decrypt;
+import com.tap.security.Encrypt;
 
 public class LoginServlet extends HttpServlet {
     private UserDaoI userDao;
@@ -26,6 +28,9 @@ public class LoginServlet extends HttpServlet {
             throws ServletException, IOException {
         String username = request.getParameter("username"); // Get username from login.jsp
         String password = request.getParameter("password"); // Get password from login.jsp
+        username=Encrypt.encryptUsername(username);
+        password=Encrypt.encryptPassword(password);
+       
 
         User user = userDao.validateUser(username, password); // Validate username and password
 
