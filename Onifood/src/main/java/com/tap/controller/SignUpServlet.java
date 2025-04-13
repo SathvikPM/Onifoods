@@ -2,6 +2,7 @@ package com.tap.controller;
 
 import com.tap.daoImp.UserDaoI;
 import com.tap.model.User;
+import com.tap.security.Encrypt;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -30,10 +31,10 @@ public class SignUpServlet extends HttpServlet {
         
         //to create the object of the user and to set the user details of the user
         User user = new User();
-        user.setUserName(username);
+        user.setUserName(Encrypt.encryptUsername(username));
         user.setEmail(email);
         user.setPhoneNumber(phoneNumber);
-        user.setPassword(password);
+        user.setPassword(Encrypt.encryptPassword(password));
         user.setAddress(address);
         user.setRole("customer");
         user.setCreateDate(new Timestamp(new Date().getTime()));
